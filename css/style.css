@@ -1,0 +1,79 @@
+:root{
+    --btcolor:#fec107
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    color: white;
+}
+.filter{
+ filter: brightness(0.5);
+}
+.comprar{
+    background-color: #29a744;
+    border-color: #29a744;
+    margin-left: 10px;
+}
+
+.subtitulo{
+    text-align: center;
+}
+#oradores{
+    margin: 0px 15% 20px;
+}
+.js{
+    font-size:12px;
+    font-weight: 700;
+    padding: 0px 5px;
+    background-color: var(--btcolor);
+    border-radius: 5px;
+}
+.react{
+    font-size:12px;
+    font-weight: 700;
+    padding: 0px 5px;
+    background-color:#18a3ba;
+    border-radius: 5px;
+    color: white;
+}
+.ngc{
+    font-size:12px;
+    font-weight: 700;
+    padding: 0px 5px;
+    background-color:#6d747e;
+    border-radius: 5px;
+    color: white;
+}
+.start{
+    color: white;
+    font-size:12px;
+    font-weight: 700;
+    padding: 0px 5px;
+    background-color:#dc3546;
+    border-radius: 5px;
+}
+.convertite{
+    text-align: center;
+}
+.enviar{
+    padding: 10px;
+    background-color:#96c93e;
+    border-color: #96c93e;
+    border-radius:5px;
+    color:white;
+    border-style: none;
+}
+.enviar:hover{
+    background-color: #29a744;
+    border-style: none;
+}
+
+.footer{
+    background:#1d465c !important;
+    color: white !important;
+    padding: 10px;
+    margin-top: 10px;
+   }
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico</title>
+    <link rel="shortcut icon" href="./pages/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="position-sticky top-0 z-3">
+        <nav class="navbar navbar-expand-lg bg-secondary">
+            <div class="container-fluid">
+                <img src="./assets/img/codoacodo.png" alt="Logo" width="100" class="d-inline-block align-text-top">
+                Conf Bs As
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#">La conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#oradores">Los oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#lugar">Lugar y Fecha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#convertite">Conviertete en orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="./pages/tickets.html" aria-disabled="comprarTickets" target="_blank">comprar tickets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./assets/img/ba1.jpg" class="filter  w-100" alt="...">
+            <div class="position-absolute top-50 start-50 col-5 text-end">
+              <div class="text text-end text-white">
+            <h1>Conf Bs As</h1>
+            <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad
+                el conocimiento y experiencia de los expertos que estan creando el futuro de internet.
+                ven a conocer a miembros del evento,a otros estudiantes de Codo a Codo 
+                y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+             <p> <a class="btn btn-outline-light mb-3" href="#convertite">quiero ser orador</a>
+              <a class="comprar btn btn-success  mb-3" href="./pages/tickets.html" target="_blank">Comprar Tickets</a> </p>
+            </div>
+          </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./assets/img/ba2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/ba3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <section id="oradores">
+      <div class="subtitulo container mt-3">
+        <h6>CONOCE A LOS</h6>
+        <h2>ORADORES</h2>
+      </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/img/steve.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <span class="js">JavaScript</span>
+                <span class="react">React</span>
+                <h5 class="card-title">Steve Jobs</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Pariatur recusandae officiis voluptates inventore ut illum blanditiis repellat ipsam eveniet
+                  eius? Sequi omnis quisquam quibusdam ullam velit asperiores vitae ducimus dolor!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/img/bill.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <span class="js">JavaScript</span>
+                <span class="react">React</span>
+                <h5 class="card-title">Bill Gates</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur recusandae officiis voluptates inventore ut illum blanditiis repellat ipsam eveniet
+                   eius? Sequi omnis quisquam quibusdam ullam velit asperiores vitae ducimus dolor!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/img/ada.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <span class="ngc">Negocios</span>
+                <span class="start">Startups</span>
+                <h5 class="card-title">Ada Lovelace</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur recusandae officiis voluptates inventore ut illum blanditiis repellat ipsam eveniet
+                   eius? Sequi omnis quisquam quibusdam ullam velit asperiores vitae ducimus dolor!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="lugar">
+      <div class="container-fluid">
+        <div class="row justify-content align-item-start">
+          <div class="col-md-6 p-0">
+            <img src="./assets/img/honolulu.jpg" class="img-fluid" loading="lazy">
+          </div>
+          <div class="col-md-6 bg-secondary">
+            <div class="card-body p-5">
+              <h3 class="card-title text-white">Bs As - Octubre</h3>
+              <p class="card-text text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptatem quam perferendis molestias amet repellat eos ratione nemo animi non explicabo architecto 
+                saepe reprehenderit delectus tempore quibusdam, quis inventore odio quo.</p>
+              <a class="btn btn-outline-light" href="#">conocé más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section id="convertite">
+        <div class="convertite mt-3">
+          <h6>Conviertete en</h6>
+          <h2>ORADOR</h2>
+          <h6>anotate como orador para dar una charla ignite.cuentanos de que quieres hablar!</h6>
+        <div  class="container col-6 mt-3">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="nombre" aria-label="Username">
+          <input type="text" class="form-control" placeholder="apellido" aria-label="Server">
+        </div>
+        
+        <div class="input-group">
+          <textarea class="form-control" placeholder="sobre que quieres hablar?"></textarea>
+        </div>
+          </div>
+          <div  class="form-text mb-3">Recuerda incluir un título para tu charla.</div>
+          <div class="d-grid gap-1 col-6 mx-auto mb-3">
+            <button class="enviar btn-primary" type="button">Enviar</button>
+          </div>
+      </section>
+    </main>
+      <footer class="footer">
+        <div class='row text-center'>
+          <div class="col-md-1 offset-md-1">Preguntas frecuentes</div>
+          <div class="col-md-1 ms-5">Contactanos</div>
+          <div class="col-md-1 ms-5">Prensa</div>
+          <div class="col-md-1 ms-5">Conferencias</div>
+          <div class="col-md-1 ms-5">Terminos y condiciones</div>
+          <div class="col-md-1 ms-5">Privacidad</div>
+          <div class="col-md-1 ms-5">Estudiantes</div>
+      </footer>
+    </div>
+    </footer>
+        <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
