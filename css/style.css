@@ -1,79 +1,146 @@
-:root{
-    --btcolor:#fec107
+:root {
+    --btcolor: #fec107
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-header{
+
+
+/* --------------- HEADER ---------------*/
+header {
     color: white;
 }
-.filter{
- filter: brightness(0.5);
+
+.navbar-nav .nav-item a:hover {
+    color: red !important;
+    /* color del texto al pasar el mouse por encima del nav*/
 }
-.comprar{
+
+
+
+
+/* -------------- IMAGENES BS AS ----------*/
+.filter {
+    filter: brightness(0.5);
+}
+
+.comprar {
     background-color: #29a744;
     border-color: #29a744;
     margin-left: 10px;
 }
 
-.subtitulo{
+.subtitulo {
     text-align: center;
 }
-#oradores{
+
+#oradores {
     margin: 0px 15% 20px;
 }
-.js{
-    font-size:12px;
+
+
+
+/* ------------ BOTONES DE TARJETAS ---------*/
+.js {
+    font-size: 12px;
     font-weight: 700;
     padding: 0px 5px;
     background-color: var(--btcolor);
+    color: black;
     border-radius: 5px;
+    text-decoration: none;
 }
-.react{
-    font-size:12px;
+
+.js:hover {
+    background-color: black;
+    color: var(--btcolor);
+}
+
+.react {
+    font-size: 12px;
     font-weight: 700;
     padding: 0px 5px;
-    background-color:#18a3ba;
+    background-color: #18a3ba;
     border-radius: 5px;
     color: white;
+    text-decoration: none;
 }
-.ngc{
-    font-size:12px;
+
+.react:hover {
+    background-color: lightgrey;
+    color: #18a3ba;
+}
+
+.ngc {
+    font-size: 12px;
     font-weight: 700;
     padding: 0px 5px;
-    background-color:#6d747e;
+    background-color: #6d747e;
     border-radius: 5px;
     color: white;
+    text-decoration: none;
 }
-.start{
+
+.ngc:hover {
+    background-color: lightgrey;
+    color: #6d747e;
+}
+
+.start {
     color: white;
-    font-size:12px;
+    font-size: 12px;
     font-weight: 700;
     padding: 0px 5px;
-    background-color:#dc3546;
+    background-color: #dc3546;
     border-radius: 5px;
+    text-decoration: none;
 }
-.convertite{
+
+.start:hover {
+    background-color: lightgrey;
+    color: #dc3546;
+}
+
+
+/* ----------------------------------------------------*/
+
+.convertite {
     text-align: center;
 }
-.enviar{
+
+.enviar {
     padding: 10px;
-    background-color:#96c93e;
+    background-color: #96c93e;
     border-color: #96c93e;
-    border-radius:5px;
-    color:white;
+    border-radius: 5px;
+    color: white;
     border-style: none;
 }
-.enviar:hover{
+
+.enviar:hover {
     background-color: #29a744;
     border-style: none;
 }
 
-.footer{
-    background:#1d465c !important;
+
+
+/* ------------------ FOOTER ----------------------*/
+
+.footer {
+    background: #1d465c !important;
     color: white !important;
     padding: 10px;
     margin-top: 10px;
-   }
 
+    a {
+        text-decoration: none !important;
+        color: white;
+    }
+
+    a:hover {
+        color: #dc3546 !important;
+    }
+
+}
