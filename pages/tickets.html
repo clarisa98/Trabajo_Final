@@ -35,7 +35,7 @@
               <a class="nav-link text-white" href="../index.html#convertite">Conviertete en orador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-success" href="./pages/tickets.html" aria-disabled="comprarTickets"
+              <a class="nav-link text-success" href="#" aria-disabled="comprarTickets"
                 target="_blank">comprar tickets</a>
             </li>
           </ul>
@@ -84,31 +84,31 @@
       <h1>VALOR DE TICKET $200</h1>
     </div>
     <section>
-    <form action=" ">
+    <form action="cargaDeFormulario.jsp">
      <div class="row justify-content-center">
       <div class="col-md-4">
-        <input id="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+        <input id="nombre" type="text" class="form-control" name="nombre" placeholder="Nombre" aria-label="">
       </div>
       <div class="col-md-4">
-        <input id="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+        <input id="apellido" type="text" class="form-control" name="apellido" placeholder="Apellido" aria-label="Last name">
       </div>
       <div class="col-md-8 p-3">
         <div class="input-group">
           <div class="input-group-text">@</div>
-          <input id="mail" type="text" class="form-control"  placeholder="email">
+          <input id="mail" type="text" class="form-control" name="mail"  placeholder="email">
         </div>
       </div>
      </div>
      <div class="row justify-content-center">
       <div class="col-md-4 mb-3">
-        <label for="cantidadTickets" class="form-label">Cantidad</label>
-        <input id="cantidadEntradas" type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad"
+        <label for="cantidadTickets" class="form-label" >Cantidad</label>
+        <input id="cantidadEntradas" type="number" class="form-control" name="cantidad" placeholder="Cantidad" aria-label="Cantidad"
           min="1" required>
       </div>
       <div class="col-md-4 mb-3">
         <label class="form-label">Categoría</label>
-        <select id="categoria" class="form-select">
-          <option selected>-- Seleccione --</option>
+        <select id="categoria" name="categoria" class="form-select">
+          <option selected value="0">-- Seleccione --</option>
           <option value="0">Sin Categoria</option>
           <option value="1">Estudiante</option>
           <option value="2">Trainee</option>
@@ -126,11 +126,14 @@
       </div>
       <div class="row justify-content-center">
         <div class="row col-md-9">
-          <div class="d-grid col-md-6">
+          <div class="d-grid col-md-4">
             <button type="reset" class="enviar btn-primary m-3" id="borrar">Borrar</button>
           </div>
-          <div class="d-grid col-md-6">
+          <div class="d-grid col-md-4">
             <button class="enviar btn-primary m-3" type="button" id="resumen">Resumen</button>
+          </div>
+          <div class="d-grid col-md-4">
+            <button class="enviar btn-primary m-3" type="submit">Comprar</button>
           </div>
         </div>
       </div>
@@ -140,7 +143,7 @@
   <footer class="footer">
     <div class='row text-center'>
       <div class="col-md-1 offset-md-1">Preguntas frecuentes</div>
-      <div class="col-md-1 ms-5"><a href="./contacto.html">Contactanos</a> </div>
+      <div class="col-md-1 ms-5">Contactanos</div>
       <div class="col-md-1 ms-5">Prensa</div>
       <div class="col-md-1 ms-5">Conferencias</div>
       <div class="col-md-1 ms-5">Terminos y condiciones</div>
