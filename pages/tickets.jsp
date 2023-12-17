@@ -1,11 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compra Tu Ticket</title>
-  <link rel="shortcut icon" href="../pages/logo.ico" type="image/x-icon">
+  <title>COMPRA</title>
+  <link rel="shortcut icon" href="./logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -35,8 +37,7 @@
               <a class="nav-link text-white" href="../index.html#convertite">Conviertete en orador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-success" href="./pages/tickets.html" aria-disabled="comprarTickets"
-                target="_blank">comprar tickets</a>
+              <a class="nav-link text-success" href="./tickets.html" aria-disabled="comprarTickets">comprar tickets</a>
             </li>
           </ul>
         </div>
@@ -79,78 +80,85 @@
         </div>
       </div>
     </div>
-    <div class="text-center">
-      <h3 style="font-weight: 200;">VENTA</h3>
-      <h1>VALOR DE TICKET $200</h1>
+     <div class="text-center">
+      <h1>TRANSACCI”N REALIZADA CON EXITO</h1>
     </div>
-    <section>
-    <form action=" ">
-     <div class="row justify-content-center">
-      <div class="col-md-4">
-        <input id="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-      </div>
-      <div class="col-md-4">
-        <input id="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-      </div>
-      <div class="col-md-8 p-3">
-        <div class="input-group">
-          <div class="input-group-text">@</div>
-          <input id="mail" type="text" class="form-control"  placeholder="email">
-        </div>
-      </div>
-     </div>
-     <div class="row justify-content-center">
-      <div class="col-md-4 mb-3">
-        <label for="cantidadTickets" class="form-label">Cantidad</label>
-        <input id="cantidadEntradas" type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad"
-          min="1" required>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label class="form-label">Categor√≠a</label>
-        <select id="categoria" class="form-select">
-          <option selected>-- Seleccione --</option>
-          <option value="0">Sin Categoria</option>
-          <option value="1">Estudiante</option>
-          <option value="2">Trainee</option>
-          <option value="3">Junior</option>
-        </select>
-      </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="alert alert-primary" role="alert">
-            Total A Pagar : $
-            <span id="total" class="text-primary"></span>
-          </div>
-        </div>
-      </div>
+    <section id="comprobante" class="row justify-content-center">
+    <div class="row col-md-8 mt-5">
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">CANTIDAD</th>
+      <th scope="col">NOMBRE</th>
+      <th scope="col">APELLIDO</th>
+      <th scope="col">MAIL</th>
+      <th scope="col">Descuento Otorgado</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    <tr>
+      <th scope="row"><%=request.getParameter("cantidad")%></th>
+      <td><%=request.getParameter("nombre")%></td>
+      <td><%=request.getParameter("apellido")%></td>
+      <td><%=request.getParameter("mail")%></td>
+      <%  String categoriaIngresada=request.getParameter("categoria");
+      String categoria="null";
+     switch (categoriaIngresada) {
+      case "1":
+          categoria="ESTUDIANTE ( 80% )";
+          break;
+      case "2":
+          categoria="TRAINNE ( 50% )";
+          break;
+      case "3":
+    	  categoria="JUNIOR ( 15% )";
+          break;
+      default:
+    	  categoria="Sin categoria ( 0% )";
+          break;
+     } 
+     %>
+     
+<td>
+<% out.println(categoria); %>
+</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</section>
+     <div class="text-center m-3">
+     <h3 style="font-weight: 200;">GRACIAS POR SU COMPRA</h3>
+    </div>
+
       <div class="row justify-content-center">
         <div class="row col-md-9">
           <div class="d-grid col-md-6">
-            <button type="reset" class="enviar btn-primary m-3" id="borrar">Borrar</button>
+            <button type="reset" class="enviar btn-primary m-3" onclick="location.href='./delete.jsp'" >Cancelar Compra</button>
           </div>
           <div class="d-grid col-md-6">
-            <button class="enviar btn-primary m-3" type="button" id="resumen">Resumen</button>
+          <a class="enviar btn-primary m-3 text-center" style="text-decoration:none"  href="../index.html"> VOLVER A INICIO </a>
           </div>
-        </div>
+          <div class="d-grid">
+            <button class="enviar btn-primary m-3" onclick="location.href='./ticketsVendidos.jsp'" >Tickets Vendidos</button>
+          </div>
       </div>
-    </form>
-    </section>
+      </div>
   </main>
   <footer class="footer">
     <div class='row text-center'>
       <div class="col-md-1 offset-md-1">Preguntas frecuentes</div>
-      <div class="col-md-1 ms-5"><a href="./contacto.html">Contactanos</a> </div>
+      <div class="col-md-1 ms-5">Contactanos</div>
       <div class="col-md-1 ms-5">Prensa</div>
       <div class="col-md-1 ms-5">Conferencias</div>
       <div class="col-md-1 ms-5">Terminos y condiciones</div>
       <div class="col-md-1 ms-5">Privacidad</div>
       <div class="col-md-1 ms-5">Estudiantes</div>
     </div>
-    </div>
   </footer>
   <script src="./js/bootstrap.min.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

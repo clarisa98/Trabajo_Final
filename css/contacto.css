@@ -1,0 +1,28 @@
+
+
+.contact-info {
+  display: flex;
+}
+
+.map {
+  flex: 1;
+  max-width: 50%;
+  padding: 6em 2em 6em 10em;
+ 
+}
+
+.contact-details {
+  flex: 1;
+  max-width: 50%;
+  padding: 7em 6em 6em 2em;
+  box-sizing: border-box;
+}
+
+h3 {
+  color: #333;
+}
+
+p {
+  color: #333;
+}
+
